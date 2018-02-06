@@ -13,13 +13,21 @@ class NewUser extends Component{
         }
     }
     
-    // insert addUser
+    addUser(){
+        axios.post('/api/users', this.state).then(res => {
+            let user = res.data;
+        }).catch(console.log);
+    }
 
 
-    // insert updateUser    
+    updateUser(){
+
+    }    
 
 
-    // insert deleteUser
+    deleteUser(){
+
+    }
 
 
     render(){
